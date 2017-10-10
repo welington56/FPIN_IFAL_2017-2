@@ -1,0 +1,34 @@
+*{
+	font-family: monospace;
+	color: white;
+}
+
+body{
+	background: url("imgs/background.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 2000px;
+}
+
+h1{
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+div:last-child h1{
+	text-align: center;
+}
+
+p{
+	font-size: 150%;
+}
+
+div:first-child p{
+	text-align: justify;
+}
+
+ul{
+	list-style-image: url("imgs/marcador.png");
+	list-style-position: inside;
+}
