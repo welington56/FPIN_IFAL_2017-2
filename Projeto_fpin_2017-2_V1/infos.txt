@@ -1,9 +1,14 @@
 NAVEGAÇÃO: Cidades, Estado, Partidos, Candidatos
 
-Estado: Cidades e quantos candidatos de cada cidade
-Cidade: Candidatos e seus partidos
-Partidos: Candidados, numeros, cidade a qual estão concorrendo e o cargo
-Candidatos: (Nome, Sexo, Idade, Nascimento, Naturalidade, profissão)(Partido atual, número, cargo a que concorre)(Realizações em sua vida 'pública' e 'profissional')
+Estados: todos os estados
+Estado: (geral de quantas cidades e candidados) Cidades e quantos candidatos de cada cidade
+Cidade: (geral de quantos candidatos) Candidatos e seus partidos
+Partidos: Todos os partidas
+Partido: Candidados, numeros, cidade a qual estão concorrendo e o cargo
+Candidato: (Nome, Sexo, Idade, Nascimento, Naturalidade, profissão)(Partido atual, número, cargo a que concorre)(Realizações em sua vida 'pública' e 'profissional')
+
+---
 
 MENU: Inicio, Sobre o WikiLítica, Candidatos, Acessar, Cadastrar
 
+Inicio: informações sobre o wilitica e Estados
