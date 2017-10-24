@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro Político</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#news">Noticias</a></li>
+      <li><a href="#contact">Contato</a></li>
+      <li><a href="templateCandidato.html">template candidatos</a></li>
+      <li><a href="cadastroCandidato.html">cadastrarCandidatos</a></li>
+      <li style="float:right"><a class="active" href="sobre.html">Sobre</a></li>
+
+    </ul>
+    <div id="cadCand">
+      <form method="post">
+            
+ <!-- TABELA DE CADASTRO 1 -->
+ 
+<fieldset>
+ <legend>Dados do Candidato</legend>
+ <table>
+  <tr>
+   <td>
+    <label>Nome de Urna: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="nomedeurna">
+   </td>
+  </tr>
+ <tr>
+   <td>
+    <label>Numero do Candidato </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="numero" size="4" maxlength="2" >
+    <label>Partido Politico: </label>
+    <input type="text" name="partido" size="8" maxlength="7">
+   </td>
+  </tr>
+    <tr>
+   <td>
+    <label>Estado de Atuação: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="estadodeatuacao" size="13" maxlength="15">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Vice Candidato: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="Vice" size="30" maxlength="60"> 
+   </td>
+  </tr>
+  </table>
+ </fieldset>
+  
+ <!-- TABELA DE CADASTRO 2 -->
+
+  <fieldset>
+ <legend>Dados Pessoais</legend>
+ <table>
+  <tr>
+   <td>
+    <label>Nome Completo: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="nome" size="40" maxlength="60">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Data de Nascimento: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="dia" size="2" maxlength="2" value=""> 
+   <input type="text" name="mes" size="2" maxlength="2" value=""> 
+   <input type="text" name="ano" size="4" maxlength="4" value="">
+   </td>
+  </tr>
+   <tr>
+   <td>
+    <label> Sexo do Candidato: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="sexo" size="15" maxlength="20">
+   </td>
+  </tr>
+   <tr>
+   <td>
+    <label>Ocupação: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="ocupacao" size="15" maxlength="60">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Estado Civil: </label>
+   </td>
+   <td style = " text - align : left ; ">
+    <input type="text" name="estadocivil" size="13" maxlength="15">
+    <label>Raça: </label>
+    <input type="text" name="raca" size="8" maxlength="10" >
+   </td>
+  </tr>
+  </table>
+  </fieldset>
+<!-- BOTAO -->
+  
+    <input type="submit" name="botao-cadastro" value="Enviar Cadastro"  onClick="alert('Cadastrado com Sucesso');return true">  
+    </div>
+        
+
+</body>
+</html>
