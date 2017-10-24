@@ -1,5 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+maxWidth{
+    width: 1300px;
+    margin: auto;
+}
+
 body{
-	background: url("../img/bgindex.jpg") no-repeat;
+	background: url("") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
