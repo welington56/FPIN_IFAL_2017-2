@@ -1,0 +1,50 @@
+body{
+	background: url("../img/bgindex.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 2000px;
+}
+
+/*********Top menu*************/
+/******************************/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #000;
+}
+
+/******template candidato*******/
+/*******************************/
+
+#main {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            text-align: left;
+            background: rgba(76, 175, 80,0.6);
+            min-height: auto;
+        }
