@@ -14,7 +14,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(97, 97, 97,0.9);
 }
 
 li {
@@ -30,17 +30,46 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgba(76, 175, 80,0.6);
 }
 
 .active {
-    background-color: #000;
+    background-color: rgba(76, 175, 80,0.6);;
 }
 
-/******template candidato*******/
-/*******************************/
+/******templateCandidato.html*******/
+/***********************************/
 
 #main {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            text-align: left;
+            background: rgba(76, 175, 80,0.6);
+            min-height: auto;
+        }
+
+#main img{
+    float: right;
+}
+/******sobre.html***************/
+/*******************************/
+
+#sobre {
+            padding: 20px;
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            text-align: left;
+            background: rgba(76, 175, 80,0.6);
+            min-height: auto;
+        }
+
+/****cadastroCandidato.html*****/
+/*******************************/
+
+#cadCand {
+            padding: 20px;
             border-collapse: collapse;
             width: 50%;
             margin: auto;
