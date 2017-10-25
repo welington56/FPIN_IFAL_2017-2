@@ -6,8 +6,8 @@
     font-family: 'Lato', sans-serif;
 }
 
-maxWidth{
-    width: 1300px;
+.maxWidth{
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -21,15 +21,21 @@ html, body{
 
 nav#menu {
     width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, .7);
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav#menu img{
+    height: 50px;
+    margin: 0 0 0 40px;
 }
 
 nav#menu ul {
     display: flex;
+    margin: 0 40px 0;
 }
 
 nav#menu li {
@@ -38,7 +44,7 @@ nav#menu li {
 }
 
 nav#menu li a {
-    color: white;
+    color: black;
     height: 100%;
 }
 
@@ -54,36 +60,89 @@ nav#menu .active {
 /* ===== INDEX ===== */
 /* ================= */
 
-/* ===== Estados Index ===== */
-
 section.contentIndex{
-    width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
+    padding-top: 80px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+/* ===== MENU ===== */
+
+nav.menuIndex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* ===== SOBRE ===== */
+
+article.sobre{
+    width: 49.9%;
+    height: 100%;
+    display: flex;
     align-items: center;
 }
 
+article.sobre div{
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 40px 0 20px;
+}
+
+article.sobre h1{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+}
+
+article.sobre h2{
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
+    margin: 0 0 40px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+article.sobre p{
+    margin: 0 0 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: right;
+    clear: both;
+}
+
+/* ===== ESTADOS INDEX===== */
+
 nav.estadosIndex{
-    width: 50%;
-    height: 100%;
+    width: 49.9%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+
+nav.estadosIndex h2{
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
 }
 
 nav.estadosIndex ul{
-    width: 50%;
-    padding: ;
+    width: 350px;
+    max-height: 500px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 nav.estadosIndex ul li{
-    margin: 20px 20px;
-    color: blue;
+    color: #0003AD;
     font-size: 16px;
-    font-weight: bold;
+    padding: 10px 30px;
+    float: left;
 }
 
 
