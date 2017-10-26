@@ -1,122 +1,65 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Cadastro Político</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#news">Noticias</a></li>
-      <li><a href="#contact">Contato</a></li>
-      <li><a href="templateCandidato.html">template candidatos</a></li>
-      <li><a href="cadastroCandidato.html">cadastrarCandidatos</a></li>
-      <li style="float:right"><a class="active" href="sobre.html">Sobre</a></li>
+<head>
+	<title>WikiLítica</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav id="menu" class="menuIndex">
+			<a href="index.html"><img src="img/logo.png"></a>
+		<!-- fazer area de pesquisa -->
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="candidatos.html">Candidatos</a></li>
+			<li><a href="signup.html">Cadastrar</a></li>
+			<li><a href="login.html">Acessar</a></li>
+		</ul>
+	</nav>
+	<section class="maxWidth contentIndex">
+		<article class="sobre">
+			<div>
+				<h1>WikiLítica</h1>
+				<h2>Uma bandeja de tipos e os embaralhou para fazer um livro.</h2>
+				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+			</div>
+		</article>
 
-    </ul>
-    <div id="cadCand">
-      <form method="post">
-            
- <!-- TABELA DE CADASTRO 1 -->
- 
-<fieldset>
- <legend>Dados do Candidato</legend>
- <table>
-  <tr>
-   <td>
-    <label>Nome de Urna: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="nomedeurna">
-   </td>
-  </tr>
- <tr>
-   <td>
-    <label>Numero do Candidato </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="numero" size="4" maxlength="2" >
-    <label>Partido Politico: </label>
-    <input type="text" name="partido" size="8" maxlength="7">
-   </td>
-  </tr>
-    <tr>
-   <td>
-    <label>Estado de Atuação: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="estadodeatuacao" size="13" maxlength="15">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label>Vice Candidato: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="Vice" size="30" maxlength="60"> 
-   </td>
-  </tr>
-  </table>
- </fieldset>
-  
- <!-- TABELA DE CADASTRO 2 -->
-
-  <fieldset>
- <legend>Dados Pessoais</legend>
- <table>
-  <tr>
-   <td>
-    <label>Nome Completo: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="nome" size="40" maxlength="60">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label>Data de Nascimento: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="dia" size="2" maxlength="2" value=""> 
-   <input type="text" name="mes" size="2" maxlength="2" value=""> 
-   <input type="text" name="ano" size="4" maxlength="4" value="">
-   </td>
-  </tr>
-   <tr>
-   <td>
-    <label> Sexo do Candidato: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="sexo" size="15" maxlength="20">
-   </td>
-  </tr>
-   <tr>
-   <td>
-    <label>Ocupação: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="ocupacao" size="15" maxlength="60">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label>Estado Civil: </label>
-   </td>
-   <td style = " text - align : left ; ">
-    <input type="text" name="estadocivil" size="13" maxlength="15">
-    <label>Raça: </label>
-    <input type="text" name="raca" size="8" maxlength="10" >
-   </td>
-  </tr>
-  </table>
-  </fieldset>
-<!-- BOTAO -->
-  
-    <input type="submit" name="botao-cadastro" value="Enviar Cadastro"  onClick="alert('Cadastrado com Sucesso');return true">  
-    </div>
-        
-
+	 	<nav class="estadosIndex">
+			<h2>Resultados por estado</h2>
+	 		<ul>
+	 			<li><a href="estado.html">Estado</a></li>
+				<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 			<li><a href="estado.html">Estado</a></li>
+	 		</ul>
+	 	</nav>
+	 </section>
+	
 </body>
 </html>
