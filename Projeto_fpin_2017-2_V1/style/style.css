@@ -603,45 +603,29 @@ section.contentCandidato nav.candidatosCidade ul li a p.profissao{
     text-align: right;
 }
 
+/* ============================ */
+/* ===== CADASTRO / LOGIN ===== */
+/* ============================ */
 
-
-/******templateCandidato.html*******/
-/***********************************/
-
-#main {
-            border-collapse: collapse;
-            width: 50%;
-            margin: auto;
-            text-align: left;
-            background: rgba(76, 175, 80,0.6);
-            min-height: auto;
-        }
-
-#main img{
-    float: right;
+#modal {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/******sobre.html***************/
-/*******************************/
 
-#sobre {
-            padding: 20px;
-            border-collapse: collapse;
-            width: 50%;
-            margin: auto;
-            text-align: left;
-            background: rgba(76, 175, 80,0.6);
-            min-height: auto;
-        }
+form.login{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
-/****cadastroCandidato.html*****/
-/*******************************/
-
-#cadCand {
-            padding: 20px;
-            border-collapse: collapse;
-            width: 50%;
-            margin: auto;
-            text-align: left;
-            background: rgba(76, 175, 80,0.6);
-            min-height: auto;
-        }
+form.login input{
+    border: 1px solid #ccc;
+}
