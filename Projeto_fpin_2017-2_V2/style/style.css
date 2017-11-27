@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.maxWidth {
+    max-width: 1300px;
+    margin: auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* ===================
+======== MENU ========
+====================== */
+
+nav#menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav#menu img {
+    height: 50px;
+    margin: 0 0 0 40px;
+}
+
+nav#menu ul {
+    height: 100%;
+    margin: 0 40px 0;
+    display: flex;
+}
+
+nav#menu li {
+    height: 100%;
+}
+
+nav#menu li a {
+    color: black;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav#menu li a:hover {
+    background-color: rgba(76, 175, 80, 0.6);
+}
+
+
+/* ====================
+======== INDEX ========
+======================= */
+
+section.contentIndex {
+    height: auto;
+    min-height: calc(100% - 80px);
+    min-width: 980px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ===== MENU ===== */
+
+nav.menuIndex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+/* ===== SOBRE ===== */
+
+section.contentIndex article.sobre {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+section.contentIndex article.sobre div {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 40px 0 20px;
+}
+
+section.contentIndex article.sobre h1 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+}
+
+section.contentIndex article.sobre h2 {
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
+    margin: 0 0 40px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+section.contentIndex article.sobre p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: right;
+    clear: both;
+}
+
+
+/* ===== ESTADOS INDEX ===== */
+
+section.contentIndex nav.estadosIndex {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+
+section.contentIndex nav.estadosIndex h2 {
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+}
+
+section.contentIndex nav.estadosIndex ul {
+    width: 350px;
+    margin: 30px 0 0;
+}
+
+section.contentIndex nav.estadosIndex ul li {
+    color: #0003AD;
+    font-size: 16px;
+    padding: 15px 30px;
+    float: left;
+}
+
+
+/* =========================
+======== CANDIDATOS ========
+============================ */
+
+section.contentCandidatos {
+    height: auto;
+    min-height: calc(100% - 80px);
+    min-width: 980px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ===== SOBRE ===== */
+
+section.contentCandidatos article.sobre {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+section.contentCandidatos article.sobre div {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 40px 0 20px;
+}
+
+section.contentCandidatos article.sobre div img.bandeiraEstado {
+    width: 100%;
+    max-width: 450px;
+    float: right;
+    margin: 0 0 20px;
+}
+
+section.contentCandidatos article.sobre h1 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+section.contentCandidatos article.sobre h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 40px;
+    text-align: center;
+    float: right;
+    clear: both;
+}
+
+section.contentCandidatos article.sobre div {
+    width: 100%;
+}
+
+section.contentCandidatos article.sobre div table {
+    float: right;
+}
+
+section.contentCandidatos article.sobre div table tr td {
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+section.contentCandidatos article.sobre div table tr td:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+section.contentCandidatos article.sobre table p {
+    font-size: 16px;
+    text-align: left;
+    float: right;
+}
+
+section.contentCandidatos article.sobre table p span {
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+
+/* ===== ESTADOS ===== */
+
+section.contentCandidatos nav.estadosCandidatos {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+
+section.contentCandidatos nav.estadosCandidatos h2 {
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+}
+
+section.contentCandidatos nav.estadosCandidatos ul {
+    width: 350px;
+    margin: 30px 0 0;
+}
+
+section.contentCandidatos nav.estadosCandidatos ul li {
+    color: #0003AD;
+    font-size: 16px;
+    padding: 15px 30px;
+    float: left;
+}
+
+
+/* =====================
+======== ESTADO ========
+======================== */
+
+section.contentEstado {
+    height: auto;
+    min-height: calc(100% - 80px);
+    min-width: 980px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ===== SOBRE ===== */
+
+section.contentEstado article.sobre {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section.contentEstado article.sobre div {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 40px 0 20px;
+}
+
+section.contentEstado article.sobre div img.bandeiraEstado {
+    width: 100%;
+    max-width: 450px;
+    float: right;
+    margin: 0 0 20px;
+}
+
+section.contentEstado article.sobre h1 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+    margin: 0 0 20px;
+}
+
+section.contentEstado article.sobre h2 {
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
+    margin: 0 0 40px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+section.contentEstado article.sobre div {
+    width: 100%;
+}
+
+section.contentEstado article.sobre div table {
+    float: right;
+}
+
+section.contentEstado article.sobre div table tr td {
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+section.contentEstado article.sobre div table tr td:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+section.contentEstado article.sobre table p {
+    font-size: 16px;
+    text-align: left;
+    float: right;
+}
+
+section.contentEstado article.sobre table p span {
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+
+/* ===== CIDADES ESTADO ===== */
+
+section.contentEstado nav.cidadesEstado {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+
+section.contentEstado nav.cidadesEstado h2 {
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+}
+
+section.contentEstado nav.cidadesEstado ul {
+    width: 350px;
+    margin: 30px 0 0;
+}
+
+section.contentEstado nav.cidadesEstado ul li {
+    color: #0003AD;
+    font-size: 16px;
+    padding: 15px 30px;
+    float: left;
+}
+
+
+/* =====================
+======== CIDADE ========
+======================== */
+
+section.contentCidade {
+    height: auto;
+    min-height: calc(100% - 80px);
+    min-width: 980px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ===== SOBRE ===== */
+
+section.contentCidade article.sobre {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.contentCidade article.sobre div {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 60px 40px 20px 20px;
+}
+
+section.contentCidade article.sobre div img.bandeiraCidade {
+    width: 100%;
+    max-width: 450px;
+    float: right;
+    margin: 0 0 20px;
+}
+
+section.contentCidade article.sobre h1 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+    margin: 0 0 20px;
+}
+
+section.contentCidade article.sobre h2 {
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
+    margin: 0 0 40px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+section.contentCidade article.sobre div {
+    width: 100%;
+}
+
+section.contentCidade article.sobre div table {
+    float: right;
+}
+
+section.contentCidade article.sobre div table tr td {
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+section.contentCidade article.sobre div table tr td:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+section.contentCidade article.sobre table p {
+    font-size: 16px;
+    text-align: left;
+    float: right;
+}
+
+section.contentCidade article.sobre table p span {
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+
+/* ===== CANDIDATOS CIDADE ===== */
+
+section.contentCidade nav.candidatosCidade {
+    width: 49.9%;
+    min-height: 550px;
+    margin: 60px 0 0 40px;
+}
+
+section.contentCidade nav.candidatosCidade h2 {
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+}
+
+section.contentCidade nav.candidatosCidade ul {
+    width: 90%;
+    margin: 30px 0 60px;
+    border: 1px solid #eaeaea;
+}
+
+section.contentCidade nav.candidatosCidade ul li {
+    color: #0003AD;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+section.contentCidade nav.candidatosCidade ul li:nth-child(odd) {
+    background: #EAEAEA;
+}
+
+section.contentCidade nav.candidatosCidade ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contentCidade nav.candidatosCidade ul li a p {
+    width: 49%;
+}
+
+section.contentCidade nav.candidatosCidade ul li a p.profissao {
+    text-align: right;
+}
+
+
+/* ========================
+======== CANDIDATO ========
+=========================== */
+
+section.contentCandidato {
+    height: auto;
+    min-height: calc(100% - 80px);
+    min-width: 980px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ===== SOBRE ===== */
+
+section.contentCandidato article.sobre {
+    width: 49.9%;
+    min-height: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.contentCandidato article.sobre div {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 60px 40px 20px 20px;
+}
+
+section.contentCandidato article.sobre div img.fotoCandidato {
+    width: 100%;
+    max-width: 450px;
+    float: right;
+    margin: 0 0 20px;
+}
+
+section.contentCandidato article.sobre h1 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+section.contentCandidato article.sobre h2 {
+    font-size: 24px;
+    font-weight: normal;
+    width: 400px;
+    margin: 0 0 40px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+section.contentCandidato article.sobre div {
+    width: 100%;
+}
+
+section.contentCandidato article.sobre div table {
+    float: right;
+}
+
+section.contentCandidato article.sobre div table tr td {
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+section.contentCandidato article.sobre div table tr td:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+section.contentCandidato article.sobre table p {
+    font-size: 24px;
+    text-align: left;
+    float: right;
+}
+
+
+/* ===== CANDIDATOS CIDADE ===== */
+
+section.contentCandidato nav.candidatosCidade {
+    width: 49.9%;
+    min-height: 550px;
+    margin: 60px 0 0 40px;
+}
+
+section.contentCandidato nav.candidatosCidade h2 {
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+}
+
+section.contentCandidato nav.candidatosCidade ul {
+    width: 90%;
+    margin: 30px 0 60px;
+    border: 1px solid #eaeaea;
+}
+
+section.contentCandidato nav.candidatosCidade ul li {
+    color: #0003AD;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+section.contentCandidato nav.candidatosCidade ul li:nth-child(odd) {
+    background: #EAEAEA;
+}
+
+section.contentCandidato nav.candidatosCidade ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contentCandidato nav.candidatosCidade ul li a p {
+    width: 49%;
+}
+
+section.contentCandidato nav.candidatosCidade ul li a p.profissao {
+    text-align: right;
+}
+
+
+/* =============================== 
+======== CADASTRO / LOGIN ======== 
+================================== */
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box {
+    width: 300px;
+    background: white;
+    padding: 10px 20px 40px;
+}
+
+div.box span {
+    cursor: pointer;
+    float: right;
+    display: table;
+    margin: 0 0 10px;
+}
+
+div.box h1 {
+    font-size: 20px;
+    clear: both;
+    font-weight: normal;
+}
+
+form.loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+}
+
+form.loginForm input {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+form.loginForm button {
+    height: 30px;
+    margin: 10px 0 5px;
+    background: #009000;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form.loginForm div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+form.loginForm div a.forgot {
+    color: red;
+}
+
+form.loginForm div span a {
+    color: blue;
+}
+
+form.loginForm div a.forgot:hover {
+    text-decoration: underline;
+}
