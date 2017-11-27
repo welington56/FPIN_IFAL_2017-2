@@ -16,14 +16,16 @@
 
     // $statement->execute();
 
-        $resultado = $conn->query("SELECT * FROM usuario ORDER BY idUsuario");
+//****************************
 
-        $data = array();
+    // $resultado = $conn->query("SELECT * FROM usuario ORDER BY idUsuario");
 
-        while ($row = $resultado->fetch_assoc()){
-            array_push($data, $row);
-        }
+    // $data = array();
 
-        echo json_encode($data);
+    // while ($row = $resultado->fetch_assoc()){
+    //     array_push($data, $row);
+    // }
+
+    // echo json_encode($data);
 
 ?>

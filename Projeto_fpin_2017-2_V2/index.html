@@ -61,8 +61,8 @@
                 <li><a href="estado.html">Estado</a></li>
                 <li><a href="estado.html">Estado</a></li>
                 <li><a href="estado.html">Estado</a></li>
-                <li><a href="estado.html">Estado</a></li>
             </ul>
+            <ul>
         </nav>
     </section>
 
@@ -85,13 +85,27 @@
         <div id="box" class="box">
             <span id="closeModal" onclick="modal('signup', 'none')">X</span>
             <h1>Cadastrar nova conta</h1>
-            <form class="loginForm" action="">
+            <form class="loginForm" action="cadastra_usuario.php" method="post">
                 <input type="email" placeholder="E-mail" name="email" required/>
                 <input type="text" placeholder="Usuario" name="newUsername" required/>
                 <input type="password" placeholder="Senha" name="newPassword" required />
-                <input type="password" placeholder="Confirme sua senha" name="newPassword" required />
+                <input type="password" placeholder="Confirme sua senha" name="newPassword2" required />
                 <button type="submit">Cadastrar</button>
                 <div><span>Já possui conta? <a class="signup" onclick="">Clique aqui!</a></span></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="estado" class="modal">
+        <div id="box" class="box">
+            <span id="closeModal" onclick="modal('estado', 'none')">X</span>
+            <h1>Cadastrar nova conta</h1>
+            <form class="loginForm" action="cadastra_usuario.php" method="post">
+                <input type="email" placeholder="E-mail" name="email" required/>
+                <input type="text" placeholder="Usuario" name="newUsername" required/>
+                <input type="password" placeholder="Senha" name="newPassword" required />
+                <input type="password" placeholder="Confirme sua senha" name="newPassword2" required />
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     </section>
