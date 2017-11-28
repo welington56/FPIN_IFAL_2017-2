@@ -30,6 +30,12 @@
                             <p><span>99</span> Candidatos</p>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <br/>
+                            <p id="cadCandidato" onclick="modal('candidato', 'flex')" style="background: #efefef; border: 1px solid #e3e3e3; border-radius: 5px; padding: 10px 15px; cursor: pointer; color: #777; font-weight: bold;">Cadastrar candidato</p>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </article>
@@ -214,6 +220,32 @@
                 <input type="password" placeholder="Confirme sua senha" name="newPassword" required />
                 <button type="submit">Cadastrar</button>
                 <div><span>Já possui conta? <a class="signup" onclick="">Clique aqui!</a></span></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="candidato" class="modal">
+        <div id="box" class="box">
+            <span id="closeModal" onclick="modal('candidato', 'none')">X</span>
+            <h1>Cadastrar novo candidato</h1>
+            <form class="loginForm" action="cadastra_candidato.php" method="post">
+                <select name="cidades">
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                </select>
+                <input type="text" placeholder="Nome do candidato" name="candidato" required/>
+                <input type="text" placeholder="Sexo" name="sexo" required/>
+                <!-- Idade aparece de acordo com o calculo da data de nascimento -->
+                <input type="date" placeholder="Data de nascimento" name="nascimento" required/>
+                <input type="text" placeholder="Naturalidade" name="naturalidade" required/>
+                <input type="text" placeholder="Profissão" name="profissao" required/>
+                <input type="text" placeholder="Partido Atual" name="partido" required/>
+                <input type="text" placeholder="Número" name="numero" required/>
+                <input type="text" placeholder="Cargo a que concorre" name="cargo" required/>
+                <p>foto do candidato (anexo)</p>
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     </section>

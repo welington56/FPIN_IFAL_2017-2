@@ -96,15 +96,45 @@
         </div>
     </section>
 
-    <section id="estado" class="modal">
+    <section id="cidade" class="modal">
         <div id="box" class="box">
-            <span id="closeModal" onclick="modal('estado', 'none')">X</span>
-            <h1>Cadastrar nova conta</h1>
-            <form class="loginForm" action="cadastra_usuario.php" method="post">
-                <input type="email" placeholder="E-mail" name="email" required/>
-                <input type="text" placeholder="Usuario" name="newUsername" required/>
-                <input type="password" placeholder="Senha" name="newPassword" required />
-                <input type="password" placeholder="Confirme sua senha" name="newPassword2" required />
+            <span id="closeModal" onclick="modal('cidade', 'none')">X</span>
+            <h1>Cadastrar nova cidade</h1>
+            <form class="loginForm" action="cadastra_cidade.php" method="post">
+                <input type="text" placeholder="Nome da cidade" name="cidade" required/>
+                <select name="estados">
+                    <option value="estado">Estado</option>
+                    <option value="estado">Estado</option>
+                    <option value="estado">Estado</option>
+                    <option value="estado">Estado</option>
+                </select>
+                <p>foto da cidade (anexo)</p>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="candidato" class="modal">
+        <div id="box" class="box">
+            <span id="closeModal" onclick="modal('candidato', 'none')">X</span>
+            <h1>Cadastrar novo candidato</h1>
+            <form class="loginForm" action="cadastra_cidade.php" method="post">
+                <select name="cidades">
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                    <option value="cidade">Cidade</option>
+                </select>
+                <input type="text" placeholder="Nome do candidato" name="candidato" required/>
+                <input type="text" placeholder="Sexo" name="sexo" required/>
+                <!-- Idade aparece de acordo com o calculo da data de nascimento -->
+                <input type="text" placeholder="Data de nascimento" name="nascimento" required/>
+                <input type="text" placeholder="Naturalidade" name="naturalidade" required/>
+                <input type="text" placeholder="Profissão" name="profissao" required/>
+                <input type="text" placeholder="Partido Atual" name="partido" required/>
+                <input type="text" placeholder="Número" name="numero" required/>
+                <input type="text" placeholder="Cargo a que concorre" name="cargo" required/>
+                <p>foto do candidato (anexo)</p>
                 <button type="submit">Cadastrar</button>
             </form>
         </div>

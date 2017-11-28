@@ -7,17 +7,6 @@
         exit;
     }
 
-    // $statement = $conn->prepare("INSERT INTO usuario (nome, senha) VALUES(?, ?)");
-
-    // $statement->bind_param("ss", $login, $pass);
-
-    // $login = "Robert";
-    // $pass = "123456";
-
-    // $statement->execute();
-
-//****************************
-
     // $resultado = $conn->query("SELECT * FROM usuario ORDER BY idUsuario");
 
     // $data = array();
